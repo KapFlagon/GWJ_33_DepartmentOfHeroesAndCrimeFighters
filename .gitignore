@@ -1,0 +1,8 @@
+.import/
+*.translation
+export_presets.cfg
+*.import
+default_env.tres
+exports/*
+planning/*
+icon.png*
