@@ -1,12 +1,32 @@
 [gd_scene format=2]
 
-[node name="GameWindow" type="Control"]
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="GameWindow" type="Node2D"]
+
+[node name="Panel" type="PanelContainer" parent="."]
+margin_right = 1024.0
+margin_bottom = 32.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="PanelContainer" type="PanelContainer" parent="."]
-anchor_right = 1.0
-anchor_bottom = 1.0
+[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 1017.0
+margin_bottom = 27.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CashLbl" type="Label" parent="Panel/HBoxContainer"]
+margin_top = 3.0
+margin_right = 46.0
+margin_bottom = 17.0
+text = "Cash: $"
+
+[node name="CashData" type="Label" parent="Panel/HBoxContainer"]
+margin_left = 50.0
+margin_top = 3.0
+margin_right = 58.0
+margin_bottom = 17.0
+text = "0"
