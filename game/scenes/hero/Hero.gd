@@ -10,7 +10,8 @@ var _alias: String setget set_alias, get_alias
 var _xp: float setget set_xp, get_xp
 var _power_score: float setget set_power_score, get_power_score
 var _charisma_score: float setget set_charisma_score, get_charisma_score
-var _social_presence_score: float setget set_social_presence_score, get_social_presence_score
+var _popularity_score: float setget set_popularity_score, get_popularity_score
+var _energy_level: int setget set_energy_level, get_energy_level
 var _ideal_contract_length 
 var _base_contract_cost
 
@@ -23,7 +24,7 @@ func _ready():
 	_xp = 0
 	_power_score = 0
 	_charisma_score = 0
-	_social_presence_score = 0
+	_popularity_score = 0
 
 
 # Setters and Getters
@@ -57,7 +58,12 @@ func set_charisma_score(new_charisma_score: float) -> void:
 func get_charisma_score() -> float:
 	return _charisma_score
 
-func set_social_presence_score(new_social_presence_score: float) -> void:
-	_social_presence_score = new_social_presence_score
-func get_social_presence_score() -> float:
-	return _social_presence_score
+func set_popularity_score(new_popularity_score: float) -> void:
+	_popularity_score = new_popularity_score
+func get_popularity_score() -> float:
+	return _popularity_score
+
+func set_energy_level(new_energy_level: int) -> void:
+	_energy_level = new_energy_level
+func get_energy_level() -> int:
+	return _energy_level
