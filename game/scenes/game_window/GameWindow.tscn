@@ -1,32 +1,67 @@
-[gd_scene format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://game/scenes/ui/StarRating.tscn" type="PackedScene" id=1]
+[ext_resource path="res://game/resources/sprites/DeskImage.png" type="Texture" id=2]
 
 [node name="GameWindow" type="Node2D"]
 
-[node name="Panel" type="PanelContainer" parent="."]
+[node name="StatusBar" type="PanelContainer" parent="."]
 margin_right = 1024.0
-margin_bottom = 32.0
+margin_bottom = 52.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="HBoxContainer" type="HBoxContainer" parent="Panel"]
+[node name="BaseHbox" type="HBoxContainer" parent="StatusBar"]
 margin_left = 7.0
 margin_top = 7.0
 margin_right = 1017.0
-margin_bottom = 27.0
+margin_bottom = 45.0
+custom_constants/separation = 35
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="CashLbl" type="Label" parent="Panel/HBoxContainer"]
-margin_top = 3.0
-margin_right = 46.0
-margin_bottom = 17.0
-text = "Cash: $"
+[node name="MoneyHbox" type="HBoxContainer" parent="StatusBar/BaseHbox"]
+margin_right = 120.0
+margin_bottom = 38.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="CashData" type="Label" parent="Panel/HBoxContainer"]
-margin_left = 50.0
-margin_top = 3.0
-margin_right = 58.0
-margin_bottom = 17.0
+[node name="CashLbl" type="Label" parent="StatusBar/BaseHbox/MoneyHbox"]
+margin_top = 12.0
+margin_right = 108.0
+margin_bottom = 26.0
+text = "Available Cash: $"
+
+[node name="CashData" type="Label" parent="StatusBar/BaseHbox/MoneyHbox"]
+margin_left = 112.0
+margin_top = 12.0
+margin_right = 120.0
+margin_bottom = 26.0
 text = "0"
+
+[node name="PublicOpinionHbox" type="HBoxContainer" parent="StatusBar/BaseHbox"]
+margin_left = 155.0
+margin_right = 451.0
+margin_bottom = 38.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="PublicOpinionLbl" type="Label" parent="StatusBar/BaseHbox/PublicOpinionHbox"]
+margin_top = 12.0
+margin_right = 98.0
+margin_bottom = 26.0
+text = "Public Opinion:"
+
+[node name="PlayerStarRating" parent="StatusBar/BaseHbox/PublicOpinionHbox" instance=ExtResource( 1 )]
+margin_left = 102.0
+margin_right = 296.0
+margin_bottom = 38.0
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 512, 426 )
+scale = Vector2( 0.64, 0.623333 )
+texture = ExtResource( 2 )

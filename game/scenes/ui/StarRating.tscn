@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://game/resources/sprites/Stars_Filled.png" type="Texture" id=1]
+[ext_resource path="res://game/resources/sprites/Stars_Empty.png" type="Texture" id=2]
+
+[node name="StarRating" type="TextureProgress"]
+margin_right = 40.0
+margin_bottom = 40.0
+value = 50.0
+texture_under = ExtResource( 2 )
+texture_progress = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
