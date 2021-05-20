@@ -1,0 +1,404 @@
+[gd_scene format=2]
+
+[node name="Negotiation" type="Node2D"]
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+margin_right = 654.0
+margin_bottom = 797.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 697.0
+margin_bottom = 790.0
+
+[node name="PanelContainer" type="PanelContainer" parent="PanelContainer/HBoxContainer"]
+margin_right = 286.0
+margin_bottom = 783.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/HBoxContainer/PanelContainer"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 279.0
+margin_bottom = 776.0
+
+[node name="Label" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer/VBoxContainer"]
+margin_right = 272.0
+margin_bottom = 14.0
+text = "Proposal"
+
+[node name="HSeparator4" type="HSeparator" parent="PanelContainer/HBoxContainer/PanelContainer/VBoxContainer"]
+margin_top = 18.0
+margin_right = 272.0
+margin_bottom = 22.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/HBoxContainer/PanelContainer/VBoxContainer"]
+margin_top = 26.0
+margin_right = 272.0
+margin_bottom = 76.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer"]
+margin_right = 63.0
+margin_bottom = 50.0
+
+[node name="Label" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+margin_right = 63.0
+margin_bottom = 14.0
+text = "They offer"
+
+[node name="Label2" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer"]
+margin_top = 18.0
+margin_right = 63.0
+margin_bottom = 32.0
+text = "$3000"
+
+[node name="VSeparator" type="VSeparator" parent="PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer"]
+margin_left = 67.0
+margin_right = 71.0
+margin_bottom = 50.0
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer"]
+margin_left = 75.0
+margin_right = 272.0
+margin_bottom = 50.0
+
+[node name="Label" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+margin_right = 197.0
+margin_bottom = 14.0
+text = "They want in return"
+
+[node name="Label2" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+margin_top = 18.0
+margin_right = 197.0
+margin_bottom = 32.0
+text = "3 movie appearances (60 days)"
+
+[node name="Label3" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer/VBoxContainer/HBoxContainer/VBoxContainer2"]
+margin_top = 36.0
+margin_right = 197.0
+margin_bottom = 50.0
+text = "1 tv appearances (10 days)"
+
+[node name="HSeparator7" type="HSeparator" parent="PanelContainer/HBoxContainer/PanelContainer/VBoxContainer"]
+margin_top = 80.0
+margin_right = 272.0
+margin_bottom = 84.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label7" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer/VBoxContainer"]
+margin_top = 88.0
+margin_right = 272.0
+margin_bottom = 102.0
+text = "Name: "
+
+[node name="Label2" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer/VBoxContainer"]
+margin_top = 106.0
+margin_right = 272.0
+margin_bottom = 120.0
+text = "22nd centenial Flox"
+
+[node name="HSeparator" type="HSeparator" parent="PanelContainer/HBoxContainer/PanelContainer/VBoxContainer"]
+margin_top = 124.0
+margin_right = 272.0
+margin_bottom = 128.0
+
+[node name="Label8" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer/VBoxContainer"]
+margin_top = 132.0
+margin_right = 272.0
+margin_bottom = 146.0
+text = "Social Media Influence Score:"
+
+[node name="Label9" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer/VBoxContainer"]
+margin_top = 150.0
+margin_right = 272.0
+margin_bottom = 164.0
+text = "80"
+
+[node name="HSeparator5" type="HSeparator" parent="PanelContainer/HBoxContainer/PanelContainer/VBoxContainer"]
+margin_top = 168.0
+margin_right = 272.0
+margin_bottom = 172.0
+
+[node name="PanelContainer2" type="PanelContainer" parent="PanelContainer/HBoxContainer"]
+margin_left = 290.0
+margin_right = 473.0
+margin_bottom = 783.0
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="PanelContainer/HBoxContainer/PanelContainer2"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 176.0
+margin_bottom = 776.0
+
+[node name="Label2" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer2/VBoxContainer2"]
+margin_right = 169.0
+margin_bottom = 14.0
+text = "Counter-offer"
+
+[node name="HSeparator2" type="HSeparator" parent="PanelContainer/HBoxContainer/PanelContainer2/VBoxContainer2"]
+margin_top = 18.0
+margin_right = 169.0
+margin_bottom = 22.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/HBoxContainer/PanelContainer2/VBoxContainer2"]
+margin_top = 26.0
+margin_right = 169.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer2/VBoxContainer2/HBoxContainer"]
+margin_right = 82.0
+margin_bottom = 14.0
+text = "They provide"
+
+[node name="VSeparator" type="VSeparator" parent="PanelContainer/HBoxContainer/PanelContainer2/VBoxContainer2/HBoxContainer"]
+margin_left = 86.0
+margin_right = 90.0
+margin_bottom = 14.0
+
+[node name="Label2" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer2/VBoxContainer2/HBoxContainer"]
+margin_left = 94.0
+margin_right = 169.0
+margin_bottom = 14.0
+text = "You provide"
+
+[node name="HSeparator3" type="HSeparator" parent="PanelContainer/HBoxContainer/PanelContainer2/VBoxContainer2"]
+margin_top = 44.0
+margin_right = 169.0
+margin_bottom = 48.0
+
+[node name="PanelContainer3" type="PanelContainer" parent="PanelContainer/HBoxContainer"]
+margin_left = 477.0
+margin_right = 690.0
+margin_bottom = 783.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="PanelContainer/HBoxContainer/PanelContainer3"]
+margin_left = 7.0
+margin_top = 7.0
+margin_right = 206.0
+margin_bottom = 776.0
+
+[node name="Label" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer"]
+margin_right = 199.0
+margin_bottom = 14.0
+text = "Options"
+
+[node name="HSeparator" type="HSeparator" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer"]
+margin_top = 18.0
+margin_right = 199.0
+margin_bottom = 22.0
+
+[node name="HBoxContainer" type="HBoxContainer" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer"]
+margin_top = 26.0
+margin_right = 199.0
+margin_bottom = 46.0
+
+[node name="Button2" type="Button" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer"]
+margin_right = 17.0
+margin_bottom = 20.0
+text = "-"
+
+[node name="Label2" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer"]
+margin_left = 21.0
+margin_top = 3.0
+margin_right = 144.0
+margin_bottom = 17.0
+text = "Movie appearances"
+
+[node name="Button" type="Button" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer"]
+margin_left = 148.0
+margin_right = 168.0
+margin_bottom = 20.0
+text = "+"
+
+[node name="HBoxContainer4" type="HBoxContainer" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer"]
+margin_top = 50.0
+margin_right = 199.0
+margin_bottom = 70.0
+
+[node name="Button2" type="Button" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer4"]
+margin_right = 17.0
+margin_bottom = 20.0
+text = "-"
+
+[node name="Label2" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer4"]
+margin_left = 21.0
+margin_top = 3.0
+margin_right = 119.0
+margin_bottom = 17.0
+text = "Tv appearances"
+
+[node name="Button" type="Button" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer4"]
+margin_left = 123.0
+margin_right = 143.0
+margin_bottom = 20.0
+text = "+"
+
+[node name="HBoxContainer2" type="HBoxContainer" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer"]
+margin_top = 74.0
+margin_right = 199.0
+margin_bottom = 94.0
+
+[node name="Button2" type="Button" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer2"]
+margin_right = 17.0
+margin_bottom = 20.0
+text = "-"
+
+[node name="Label3" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer2"]
+margin_left = 21.0
+margin_top = 3.0
+margin_right = 159.0
+margin_bottom = 17.0
+text = "Cost per apppearance"
+
+[node name="Button" type="Button" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer2"]
+margin_left = 163.0
+margin_right = 183.0
+margin_bottom = 20.0
+text = "+"
+
+[node name="HBoxContainer3" type="HBoxContainer" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer"]
+margin_top = 98.0
+margin_right = 199.0
+margin_bottom = 118.0
+
+[node name="Button2" type="Button" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer3"]
+margin_right = 17.0
+margin_bottom = 20.0
+text = "-"
+
+[node name="Label4" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer3"]
+margin_left = 21.0
+margin_top = 3.0
+margin_right = 115.0
+margin_bottom = 17.0
+text = "% of box office"
+
+[node name="Button" type="Button" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer3"]
+margin_left = 119.0
+margin_right = 139.0
+margin_bottom = 20.0
+text = "+"
+
+[node name="HBoxContainer10" type="HBoxContainer" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer"]
+margin_top = 122.0
+margin_right = 199.0
+margin_bottom = 142.0
+
+[node name="Button2" type="Button" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer10"]
+margin_right = 17.0
+margin_bottom = 20.0
+text = "-"
+
+[node name="Label5" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer10"]
+margin_left = 21.0
+margin_top = 3.0
+margin_right = 94.0
+margin_bottom = 17.0
+text = "% of merch"
+
+[node name="Button" type="Button" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer10"]
+margin_left = 98.0
+margin_right = 118.0
+margin_bottom = 20.0
+text = "+"
+
+[node name="HBoxContainer6" type="HBoxContainer" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer"]
+margin_top = 146.0
+margin_right = 199.0
+margin_bottom = 166.0
+
+[node name="Button2" type="Button" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer6"]
+margin_right = 17.0
+margin_bottom = 20.0
+text = "-"
+
+[node name="Label7" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer6"]
+margin_left = 21.0
+margin_top = 3.0
+margin_right = 175.0
+margin_bottom = 17.0
+text = "Termination fee amount"
+
+[node name="Button" type="Button" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer6"]
+margin_left = 179.0
+margin_right = 199.0
+margin_bottom = 20.0
+text = "+"
+
+[node name="HBoxContainer11" type="HBoxContainer" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer"]
+margin_top = 170.0
+margin_right = 199.0
+margin_bottom = 190.0
+
+[node name="Button2" type="Button" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer11"]
+margin_right = 17.0
+margin_bottom = 20.0
+text = "-"
+
+[node name="Label7" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer11"]
+margin_left = 21.0
+margin_top = 3.0
+margin_right = 138.0
+margin_bottom = 17.0
+text = "Termination fee %"
+
+[node name="Button" type="Button" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer11"]
+margin_left = 142.0
+margin_right = 162.0
+margin_bottom = 20.0
+text = "+"
+
+[node name="HBoxContainer8" type="HBoxContainer" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer"]
+margin_top = 194.0
+margin_right = 199.0
+margin_bottom = 214.0
+
+[node name="Button2" type="Button" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer8"]
+margin_right = 17.0
+margin_bottom = 20.0
+text = "-"
+
+[node name="Label" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer8"]
+margin_left = 21.0
+margin_top = 3.0
+margin_right = 21.0
+margin_bottom = 17.0
+
+[node name="Button" type="Button" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer8"]
+margin_left = 25.0
+margin_right = 45.0
+margin_bottom = 20.0
+text = "+"
+
+[node name="HBoxContainer9" type="HBoxContainer" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer"]
+margin_top = 218.0
+margin_right = 199.0
+margin_bottom = 238.0
+
+[node name="Button2" type="Button" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer9"]
+margin_right = 17.0
+margin_bottom = 20.0
+text = "-"
+
+[node name="Button" type="Button" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer/HBoxContainer9"]
+margin_left = 21.0
+margin_right = 41.0
+margin_bottom = 20.0
+text = "+"
+
+[node name="Label2" type="Label" parent="PanelContainer/HBoxContainer/PanelContainer3/VBoxContainer"]
+margin_top = 242.0
+margin_right = 199.0
+margin_bottom = 256.0
+text = "Assigned Hero"
