@@ -1,0 +1,42 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://game/scenes/ui/NegotiationValueChanger.gd" type="Script" id=1]
+
+[node name="NegotiationValueChanger" type="HBoxContainer"]
+anchor_right = 0.119
+anchor_bottom = 0.025
+margin_right = 0.143997
+alignment = 1
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+_value_name = "ValueName"
+
+[node name="ValueNameLbl" type="Label" parent="."]
+margin_top = 3.0
+margin_right = 73.0
+margin_bottom = 17.0
+text = "ValueName"
+
+[node name="MinusBtn" type="Button" parent="."]
+margin_left = 77.0
+margin_right = 94.0
+margin_bottom = 20.0
+text = "-"
+
+[node name="ValueDataLbl" type="Label" parent="."]
+margin_left = 98.0
+margin_top = 3.0
+margin_right = 106.0
+margin_bottom = 17.0
+text = "0"
+
+[node name="AddBtn" type="Button" parent="."]
+margin_left = 110.0
+margin_right = 130.0
+margin_bottom = 20.0
+text = "+"
+
+[connection signal="button_up" from="MinusBtn" to="." method="_on_MinusBtn_button_up"]
+[connection signal="button_up" from="AddBtn" to="." method="_on_AddBtn_button_up"]

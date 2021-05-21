@@ -33,7 +33,7 @@ _global_script_class_icons={
 [application]
 
 config/name="33_DepartmentOfHeroesAndCrimeFighters"
-run/main_scene="res://game/scenes/game_window/GameWindow.tscn"
+run/main_scene="res://game/scenes/negotiation/EmploymentNegotiation.tscn"
 config/icon="res://icon.png"
 
 [display]
