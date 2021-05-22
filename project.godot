@@ -10,6 +10,26 @@ config_version=4
 
 _global_script_classes=[ {
 "base": "Node",
+"class": "BasicJob",
+"language": "GDScript",
+"path": "res://game/scenes/contracts/BasicJob.gd"
+}, {
+"base": "Node",
+"class": "EmploymentContract",
+"language": "GDScript",
+"path": "res://game/scenes/contracts/EmploymentContract.gd"
+}, {
+"base": "Node",
+"class": "EmploymentContractGenerator",
+"language": "GDScript",
+"path": "res://game/sceneless_scripts/generators/EmploymentContractGenerator.gd"
+}, {
+"base": "Node2D",
+"class": "EmploymentNegotiation",
+"language": "GDScript",
+"path": "res://game/scenes/negotiation/EmploymentNegotiation.gd"
+}, {
+"base": "Node",
 "class": "GameEnums",
 "language": "GDScript",
 "path": "res://game/sceneless_scripts/GameEnums.gd"
@@ -22,9 +42,13 @@ _global_script_classes=[ {
 "base": "Node",
 "class": "HeroGenerator",
 "language": "GDScript",
-"path": "res://game/sceneless_scripts/HeroGenerator.gd"
+"path": "res://game/sceneless_scripts/generators/HeroGenerator.gd"
 } ]
 _global_script_class_icons={
+"BasicJob": "",
+"EmploymentContract": "",
+"EmploymentContractGenerator": "",
+"EmploymentNegotiation": "",
 "GameEnums": "",
 "Hero": "",
 "HeroGenerator": ""
@@ -33,7 +57,7 @@ _global_script_class_icons={
 [application]
 
 config/name="33_DepartmentOfHeroesAndCrimeFighters"
-run/main_scene="res://game/scenes/negotiation/EmploymentNegotiation.tscn"
+run/main_scene="res://game/scenes/game_window/GameWindow.tscn"
 config/icon="res://icon.png"
 
 [display]

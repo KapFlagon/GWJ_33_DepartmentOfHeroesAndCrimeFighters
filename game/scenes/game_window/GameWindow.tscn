@@ -1,11 +1,14 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://game/scenes/ui/StarRating.tscn" type="PackedScene" id=1]
 [ext_resource path="res://game/resources/sprites/DeskImage.png" type="Texture" id=2]
+[ext_resource path="res://game/scenes/game_window/GameWindow.gd" type="Script" id=3]
 
 [node name="GameWindow" type="Node2D"]
+script = ExtResource( 3 )
 
 [node name="StatusBar" type="PanelContainer" parent="."]
+anchor_right = 0.621
 margin_right = 1024.0
 margin_bottom = 52.0
 __meta__ = {
@@ -22,29 +25,8 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="MoneyHbox" type="HBoxContainer" parent="StatusBar/BaseHbox"]
-margin_right = 120.0
-margin_bottom = 38.0
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="CashLbl" type="Label" parent="StatusBar/BaseHbox/MoneyHbox"]
-margin_top = 12.0
-margin_right = 108.0
-margin_bottom = 26.0
-text = "Available Cash: $"
-
-[node name="CashData" type="Label" parent="StatusBar/BaseHbox/MoneyHbox"]
-margin_left = 112.0
-margin_top = 12.0
-margin_right = 120.0
-margin_bottom = 26.0
-text = "0"
-
 [node name="PublicOpinionHbox" type="HBoxContainer" parent="StatusBar/BaseHbox"]
-margin_left = 155.0
-margin_right = 451.0
+margin_right = 296.0
 margin_bottom = 38.0
 __meta__ = {
 "_edit_use_anchors_": false
@@ -61,7 +43,103 @@ margin_left = 102.0
 margin_right = 296.0
 margin_bottom = 38.0
 
+[node name="DaysHbox" type="HBoxContainer" parent="StatusBar/BaseHbox"]
+margin_left = 331.0
+margin_right = 433.0
+margin_bottom = 38.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DayLbl" type="Label" parent="StatusBar/BaseHbox/DaysHbox"]
+margin_top = 12.0
+margin_right = 90.0
+margin_bottom = 26.0
+text = "Days in office:"
+
+[node name="DayData" type="Label" parent="StatusBar/BaseHbox/DaysHbox"]
+margin_left = 94.0
+margin_top = 12.0
+margin_right = 102.0
+margin_bottom = 26.0
+text = "1"
+
+[node name="MoneyHbox2" type="HBoxContainer" parent="StatusBar/BaseHbox"]
+margin_left = 468.0
+margin_right = 588.0
+margin_bottom = 38.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CashLbl" type="Label" parent="StatusBar/BaseHbox/MoneyHbox2"]
+margin_top = 12.0
+margin_right = 108.0
+margin_bottom = 26.0
+text = "Available Cash: $"
+
+[node name="CashData" type="Label" parent="StatusBar/BaseHbox/MoneyHbox2"]
+margin_left = 112.0
+margin_top = 12.0
+margin_right = 120.0
+margin_bottom = 26.0
+text = "0"
+
+[node name="IncomeHbox" type="HBoxContainer" parent="StatusBar/BaseHbox"]
+margin_left = 623.0
+margin_right = 700.0
+margin_bottom = 38.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CashLbl" type="Label" parent="StatusBar/BaseHbox/IncomeHbox"]
+margin_top = 12.0
+margin_right = 65.0
+margin_bottom = 26.0
+text = "Income: $"
+
+[node name="CashData" type="Label" parent="StatusBar/BaseHbox/IncomeHbox"]
+margin_left = 69.0
+margin_top = 12.0
+margin_right = 77.0
+margin_bottom = 26.0
+text = "0"
+
+[node name="ExpensesHbox" type="HBoxContainer" parent="StatusBar/BaseHbox"]
+margin_left = 735.0
+margin_right = 828.0
+margin_bottom = 38.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CashLbl" type="Label" parent="StatusBar/BaseHbox/ExpensesHbox"]
+margin_top = 12.0
+margin_right = 81.0
+margin_bottom = 26.0
+text = "Expenses: -$"
+
+[node name="CashData" type="Label" parent="StatusBar/BaseHbox/ExpensesHbox"]
+margin_left = 85.0
+margin_top = 12.0
+margin_right = 93.0
+margin_bottom = 26.0
+text = "0"
+
 [node name="Sprite" type="Sprite" parent="."]
-position = Vector2( 512, 426 )
+position = Vector2( 512, 424 )
 scale = Vector2( 0.64, 0.623333 )
 texture = ExtResource( 2 )
+
+[node name="NextThingBtn" type="Button" parent="."]
+margin_left = 80.0
+margin_top = 384.0
+margin_right = 303.0
+margin_bottom = 432.0
+text = "Next"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="button_up" from="NextThingBtn" to="." method="_on_NextThingBtn_button_up"]

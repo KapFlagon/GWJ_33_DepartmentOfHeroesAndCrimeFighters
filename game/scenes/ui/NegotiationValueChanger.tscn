@@ -12,6 +12,7 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 _value_name = "ValueName"
+_change_size_value = 1
 
 [node name="ValueNameLbl" type="Label" parent="."]
 margin_top = 3.0
@@ -38,5 +39,7 @@ margin_right = 130.0
 margin_bottom = 20.0
 text = "+"
 
+[connection signal="button_down" from="MinusBtn" to="." method="_on_MinusBtn_button_down"]
 [connection signal="button_up" from="MinusBtn" to="." method="_on_MinusBtn_button_up"]
+[connection signal="button_down" from="AddBtn" to="." method="_on_AddBtn_button_down"]
 [connection signal="button_up" from="AddBtn" to="." method="_on_AddBtn_button_up"]
